@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "394771586604",
+    "firebase_url": "https://dispet-35f9f-default-rtdb.firebaseio.com",
+    "project_id": "dispet-35f9f",
+    "storage_bucket": "dispet-35f9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394771586604:android:addd193597e1d6bbd3fb89",
+        "android_client_info": {
+          "package_name": "com.example.dispetfirebest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394771586604-0igbe3ai4sa3rfnr1a63hjdmmj0ad4hu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBefRlst85Se0vER07E9vKGdPqyV9MkHXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394771586604-0igbe3ai4sa3rfnr1a63hjdmmj0ad4hu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
