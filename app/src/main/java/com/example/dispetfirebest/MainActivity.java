@@ -48,12 +48,18 @@ public class MainActivity extends AppCompatActivity {
                 etedad = (EditText) findViewById(R.id.etedad);
                 String nombre = etnombre.getText().toString();
                 String apellido = etapellido.getText().toString();
-                int edad = Integer.parseInt(etedad.getText().toString());
-                String key = UUID.randomUUID().toString();
-                Alumno a = new Alumno(nombre,apellido,edad);
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("alumno");
-                myRef.setValue(a);
+                try {
+                    int edad = Integer.parseInt(etedad.getText().toString());
+                    String key = UUID.randomUUID().toString();
+                    Alumno a = new Alumno(key,nombre,apellido,edad);
+                    FirebaseDatabase database = FirebaseDatabase.getInstance();
+                    DatabaseReference myRef = database.getReference("alumno").child(key);
+                    myRef.setValue(a);
+                }catch (Exception e){
+                    Toast.makeText(MainActivity.this, "debe ser un numero", Toast.LENGTH_SHORT).show();
+                }
+
+
 
 
 

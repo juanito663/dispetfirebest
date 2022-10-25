@@ -1,6 +1,7 @@
 package com.example.dispetfirebest.modelo;
 
 public class Alumno {
+    public String id;
     public String nombre;
     public String apellido;
     public int edad;
@@ -8,7 +9,8 @@ public class Alumno {
     public Alumno() {
     }
 
-    public Alumno(String nombre, String apellido, int edad) {
+    public Alumno(String id, String nombre, String apellido, int edad) {
+        this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
